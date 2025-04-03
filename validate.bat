@@ -33,8 +33,6 @@ set errorRet=%errorlevel%
 if %errorRet% neq 0 goto :error
 
 echo No data integrity validation errors.
-del "%~1.svrl.xml"
-del "%~1.error.txt"
 goto :done
 
 :args
@@ -49,4 +47,6 @@ goto :done
 type "%~1.error.txt"
 
 :done
+del "%~1.svrl.xml"
+del "%~1.error.txt"
 exit /B %errorRet%
