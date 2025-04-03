@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                        xmlns:saxon="http://saxon.sf.net/"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:qdt="urn:iso:std:iso:20022:tech:xsd:remt.001.001.05"
+                        title=""
+                        schemaVersion=""><!--   
+		   
+		   
+		 -->
+   <svrl:ns-prefix-in-attribute-values uri="urn:iso:std:iso:20022:tech:xsd:remt.001.001.05" prefix="qdt"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-001"
+                        name="remt.001-001"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-002"
+                        name="remt.001-002"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-003"
+                        name="remt.001-003"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-004"
+                        name="remt.001-004"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-005"
+                        name="remt.001-005"/>
+   <svrl:fired-rule context="qdt:Othr"/>
+   <svrl:fired-rule context="qdt:Othr"/>
+   <svrl:failed-assert test="ancestor::qdt:OrgId[parent::qdt:Id[parent::qdt:InitgPty]] and normalize-space(qdt:Id) != ''"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:GrpHdr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:MsgRcpt[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Id[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgId[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Othr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                MsgRcpt Party Id is required and must not be empty.
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-006"
+                        name="remt.001-006"/>
+   <svrl:fired-rule context="qdt:Othr"/>
+   <svrl:failed-assert test="ancestor::qdt:OrgId[parent::qdt:Id[parent::qdt:MsgRcpt]] and normalize-space(qdt:Id) != ''"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:GrpHdr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:InitgPty[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Id[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgId[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Othr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                MsgRcpt Party Id is required and must not be empty.
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="qdt:Othr"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-007"
+                        name="remt.001-007"/>
+   <svrl:fired-rule context="qdt:Strd"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-008"
+                        name="remt.001-008"/>
+   <svrl:fired-rule context="qdt:RfrdDocInf"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-009"
+                        name="remt.001-009"/>
+   <svrl:fired-rule context="qdt:Cd"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-010"
+                        name="remt.001-010"/>
+   <svrl:fired-rule context="qdt:Nb"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-011"
+                        name="remt.001-011"/>
+   <svrl:fired-rule context="qdt:RltdDt"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-012"
+                        name="remt.001-012"/>
+   <svrl:fired-rule context="qdt:RfrdDocAmt"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-013"
+                        name="remt.001-013"/>
+   <svrl:fired-rule context="qdt:RmtdAmt"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-014"
+                        name="remt.001-014"/>
+   <svrl:fired-rule context="qdt:InstdAmt"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-015"
+                        name="remt.001-015"/>
+   <svrl:fired-rule context="qdt:Dt"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-016"
+                        name="remt.001-016"/>
+   <svrl:fired-rule context="qdt:Nm"/>
+   <svrl:fired-rule context="qdt:Nm"/>
+   <svrl:failed-assert test="ancestor::qdt:Dbtr[ancestor::qdt:OrgnlPmtInf[ancestor::qdt:RmtInf[ancestor::qdt:RmtAdvc]]]"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgnlPmtInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Cdtr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Nm[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                OrgnlPmtInf Dbtr Nm is required.
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-017"
+                        name="remt.001-017"/>
+   <svrl:fired-rule context="qdt:Nm"/>
+   <svrl:failed-assert test="ancestor::qdt:Cdtr[ancestor::qdt:OrgnlPmtInf[ancestor::qdt:RmtInf[ancestor::qdt:RmtAdvc]]]"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgnlPmtInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Dbtr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Nm[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                OrgnlPmtInf Cdtr Nm is required.
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="qdt:Nm"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-018"
+                        name="remt.001-018"/>
+   <svrl:fired-rule context="qdt:Prtry"/>
+   <svrl:failed-assert test="ancestor::qdt:SchmeNm[ancestor::qdt:Othr[ancestor::qdt:OrgId[ancestor::qdt:Id[ancestor::qdt:InitgPty[ancestor::qdt:GrpHdr[ancestor::qdt:RmtAdvc]]]]]] and . = 'exchange framework'"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:GrpHdr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:InitgPty[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Id[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgId[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Othr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:SchmeNm[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Prtry[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                InitgPty OrdId ScheNm Prtry has to be "exchange framework".
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="qdt:Prtry"/>
+   <svrl:failed-assert test="ancestor::qdt:SchmeNm[ancestor::qdt:Othr[ancestor::qdt:OrgId[ancestor::qdt:Id[ancestor::qdt:InitgPty[ancestor::qdt:GrpHdr[ancestor::qdt:RmtAdvc]]]]]] and . = 'exchange framework'"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:GrpHdr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:MsgRcpt[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Id[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgId[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Othr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:SchmeNm[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Prtry[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                InitgPty OrdId ScheNm Prtry has to be "exchange framework".
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-019"
+                        name="remt.001-019"/>
+   <svrl:fired-rule context="qdt:Prtry"/>
+   <svrl:failed-assert test="ancestor::qdt:SchmeNm[ancestor::qdt:Othr[ancestor::qdt:OrgId[ancestor::qdt:Id[ancestor::qdt:MsgRcpt[ancestor::qdt:GrpHdr[ancestor::qdt:RmtAdvc]]]]]] and . = 'exchange framework'"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:GrpHdr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:InitgPty[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Id[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgId[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Othr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:SchmeNm[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Prtry[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                MsgRcpt OrdId ScheNm Prtry has to be "exchange framework".
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="qdt:Prtry"/>
+   <svrl:failed-assert test="ancestor::qdt:SchmeNm[ancestor::qdt:Othr[ancestor::qdt:OrgId[ancestor::qdt:Id[ancestor::qdt:MsgRcpt[ancestor::qdt:GrpHdr[ancestor::qdt:RmtAdvc]]]]]] and . = 'exchange framework'"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:GrpHdr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:MsgRcpt[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Id[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:OrgId[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Othr[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:SchmeNm[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Prtry[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                MsgRcpt OrdId ScheNm Prtry has to be "exchange framework".
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-020"
+                        name="remt.001-020"/>
+   <svrl:fired-rule context="qdt:Cd"/>
+   <svrl:failed-assert test="ancestor::qdt:SchmeNm[ancestor::qdt:Othr[ancestor::qdt:OrgId[ancestor::qdt:Id[ancestor::qdt:InitgPty[ancestor::qdt:GrpHdr[ancestor::qdt:RmtAdvc]]]]]] and . = ''"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Strd[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RfrdDocInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Tp[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:CdOrPrtry[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Cd[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                InitgPty OrdId ScheNm Cd is not supported.
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-021"
+                        name="remt.001-021"/>
+   <svrl:fired-rule context="qdt:Cd"/>
+   <svrl:failed-assert test="ancestor::qdt:SchmeNm[ancestor::qdt:Othr[ancestor::qdt:OrgId[ancestor::qdt:Id[ancestor::qdt:MsgRcpt[ancestor::qdt:GrpHdr[ancestor::qdt:RmtAdvc]]]]]] and . = ''"
+                       location="/*:Document[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtAdvc[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RmtInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Strd[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:RfrdDocInf[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Tp[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:CdOrPrtry[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]/*:Cd[namespace-uri()='urn:iso:std:iso:20022:tech:xsd:remt.001.001.05'][1]">
+      <svrl:text>
+                MsgRcpt OrdId ScheNm Cd is not supported.
+            </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-022"
+                        name="remt.001-022"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-023"
+                        name="remt.001-023"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-024"
+                        name="remt.001-024"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-025"
+                        name="remt.001-025"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-026"
+                        name="remt.001-026"/>
+   <svrl:active-pattern document="file:/mnt/d/Dev/dbna/Testing_xsd_schematron/RemittanceAdvice.xml"
+                        id="remt.001-027"
+                        name="remt.001-027"/>
+</svrl:schematron-output>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:remt.001.001.05">
+    <RmtAdvc>
+        <GrpHdr>
+            <MsgId>20250308_CHKR1234567890_1234_000001</MsgId>
+            <CreDtTm>2025-03-08T14:23:13</CreDtTm>
+            <InitgPty>
+                <Id>
+                    <OrgId>
+                        <Othr>
+                            <Id>00887508006147017</Id>
+                            <SchmeNm>
+                                <Prtry>Exchange Framework</Prtry>
+                            </SchmeNm>
+                        </Othr>
+                    </OrgId>
+                </Id>
+            </InitgPty>
+            <MsgRcpt>
+                <Id>
+                    <OrgId>
+                        <Othr>
+                            <Id>02080878065378</Id>
+                            <SchmeNm>
+                                <Prtry>Exchange Framework</Prtry>
+                            </SchmeNm>
+                        </Othr>
+                    </OrgId>
+                </Id>
+            </MsgRcpt>
+        </GrpHdr>
+        <RmtInf>
+            <RmtId>20250308_CHKR1234567890_1234_000001</RmtId>
+            <Strd>
+                <RfrdDocInf>
+                    <Tp>
+                        <CdOrPrtry>
+                            <Cd>CINV</Cd>
+                        </CdOrPrtry>
+                    </Tp>
+                    <Nb>INV-847778DVM</Nb>
+                    <RltdDt>2025-02-23</RltdDt>
+                </RfrdDocInf>
+                <RfrdDocAmt>
+                    <DuePyblAmt Ccy="EUR">1000.00</DuePyblAmt>
+                    <RmtdAmt Ccy="EUR">50.00</RmtdAmt>
+                </RfrdDocAmt>
+            </Strd>
+            <OrgnlPmtInf>
+                <Refs>
+                    <EndToEndId>20250308_CHKR1234567890_1234_000001</EndToEndId>
+                </Refs>
+                <Amt>
+                    <InstdAmt Ccy="EUR">50.00</InstdAmt>
+                </Amt>
+                <ReqdExctnDt>
+                    <Dt>2025-02-23</Dt>
+                </ReqdExctnDt>
+                <Dbtr>
+                    <Nm>00887508006147017</Nm>
+                </Dbtr>
+                <Cdtr>
+                    <Nm>02080878065378</Nm>
+                </Cdtr>            
+            </OrgnlPmtInf>
+        </RmtInf>
+    </RmtAdvc>
+</Document>
